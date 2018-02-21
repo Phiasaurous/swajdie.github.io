@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<!-- Author Meta -->
+	<link rel="shortcut icon" href="img/fav.png">
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Lab 3</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body class="dup-body">
+		<div class="dup-body-wrap">
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<div class="header-wrap">
+					<div class="header-top d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<a href="index.html"><img src="img/logo.jpg" alt="logo" width="200"></a>
+						</div>
+						<div class="main-menubar white-menubar d-flex align-items-center">
+							<nav class="hide">
+								<a href="index.html">Home</a>
+								<a href="courses.html">Courses</a>
+							</nav>
+							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- End Header Area -->
+		<!-- Start Banner Area -->
+		<section class="generic-banner element-banner relative">
+			<div class="container">
+				<div class="row height align-items-center justify-content-center">
+					<div class="col-lg-10">
+						<div class="banner-content text-center">
+							<h2 class="text-white">Lab 3</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Banner Area -->
+		<!-- Start Sample Area -->
+		<section class="sample-text-area">
+			<div class="container">
+				<h3 class="text-heading">XML and Related Technologies</h3>
+				<br/>
+				<h4 class="text-heading">XML Tree Diagram</h4>
+				<iframe src="/pdf/ProjectsTreeDiagram.pdf#page=1" width="100%" height="100%">
+				This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/ProjectsTreeDiagram.pdf">Download PDF</a>
+				</iframe>				
+				<br/>
+				<h4 class="text-heading">DTD</h4>
+				<p class="sample-text">
+					<code>
+					<!ELEMENT projects (company, project+) >
+	<!ELEMENT company (companyname, companyaddress, logo, websiteaddress?, email, phone+) >
+		<!ELEMENT companyname (#PCDATA) >
+		<!ELEMENT companyaddress (#PCDATA) >
+		<!ELEMENT logo EMPTY >
+		<!ATTLIST logo src CDATA #REQUIRED >
+		<!ELEMENT websiteaddress (#PCDATA) >
+		<!ELEMENT email (#PCDATA) >		
+		<!ELEMENT phone (#PCDATA) >		
+	<!ELEMENT project (title, managers, teams, clients?, projectdate, projectcomments) >
+	    <!ATTLIST project projid ID #REQUIRED >
+		<!ELEMENT title (#PCDATA) >
+		<!ELEMENT managers (manager+) >
+			<!ELEMENT manager (name, mphone, memail*) >
+				<!ELEMENT name (firstname, middlename?, lastname) >
+					<!ELEMENT firstname (#PCDATA) >
+					<!ELEMENT middlename (#PCDATA) >
+					<!ELEMENT lastname (#PCDATA) >
+				<!ELEMENT mphone EMPTY >	
+				<!ATTLIST mphone office CDATA #REQUIRED >
+				<!ATTLIST mphone home CDATA #REQUIRED >	
+				<!ELEMENT memail (#PCDATA) >			
+		<!ELEMENT teams (team+) >		
+			<!ELEMENT team (leader, developers+, tester?, documenters*) >
+				<!ELEMENT leader (#PCDATA) >
+				<!ELEMENT developers (#PCDATA) >
+				<!ELEMENT tester (#PCDATA) >	
+				<!ELEMENT documenters (#PCDATA) >
+		<!ELEMENT clients (client?) >
+			<!ELEMENT client (clientname, address, clientemail, clientphone) >
+			<!ATTLIST client clientid ID #REQUIRED>
+				<!ELEMENT clientname (#PCDATA) >
+				<!ELEMENT address (street?, city, country, postcode?) >
+					<!ELEMENT street (#PCDATA) >
+					<!ELEMENT city (#PCDATA) >
+					<!ELEMENT country (#PCDATA) >	
+					<!ELEMENT postcode (#PCDATA) >				
+				<!ELEMENT clientemail (#PCDATA) >	
+				<!ELEMENT clientphone (#PCDATA) >
+		<!ELEMENT projectdate EMPTY >
+		<!ATTLIST projectdate start CDATA #REQUIRED >
+		<!ATTLIST projectdate end CDATA #REQUIRED >
+		<!ELEMENT projectcomments (#PCDATA) >
+					</code>
+				</p>
+				<br/>
+				<h4 class="text-heading">XML</h4>
+				<img src="/img/xml.jpg"/>
+				<br/>
+				<h4 class="text-heading">XSL</h4>
+				<img src="/img/xsl.jpg"/>
+			</div>
+		</section>
+		<!-- End Sample Area -->
+		
+		<!-- Strat Footer Area -->
+		<footer class="section-gap footer-widget-area">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">Website Navigation Links</h6>
+							<ul class="footer-nav">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="courses.html">Courses</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">Course Navigation Links</h6>
+							<ul class="footer-nav">
+								<li><a href="classworks.html">Classworks</a></li>
+								<li><a href="labs.html">Labs</a></li>
+								<li><a href="projects.html">Projects</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+					<p class="footer-text m-0">Copyright &copy; 2018 All rights reserved   |  Sophia Wajdie | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/">Colorlib</a></p>
+
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+		</div>
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
