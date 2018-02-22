@@ -74,49 +74,50 @@
 				<h4 class="text-heading">DTD</h4>
 				<p class="sample-text">
 					<code>
-					<!ELEMENT projects (company, project+) >
-	<!ELEMENT company (companyname, companyaddress, logo, websiteaddress?, email, phone+) >
-		<!ELEMENT companyname (#PCDATA) >
-		<!ELEMENT companyaddress (#PCDATA) >
-		<!ELEMENT logo EMPTY >
-		<!ATTLIST logo src CDATA #REQUIRED >
-		<!ELEMENT websiteaddress (#PCDATA) >
-		<!ELEMENT email (#PCDATA) >		
-		<!ELEMENT phone (#PCDATA) >		
-	<!ELEMENT project (title, managers, teams, clients?, projectdate, projectcomments) >
-	    <!ATTLIST project projid ID #REQUIRED >
-		<!ELEMENT title (#PCDATA) >
-		<!ELEMENT managers (manager+) >
-			<!ELEMENT manager (name, mphone, memail*) >
-				<!ELEMENT name (firstname, middlename?, lastname) >
-					<!ELEMENT firstname (#PCDATA) >
-					<!ELEMENT middlename (#PCDATA) >
-					<!ELEMENT lastname (#PCDATA) >
-				<!ELEMENT mphone EMPTY >	
-				<!ATTLIST mphone office CDATA #REQUIRED >
-				<!ATTLIST mphone home CDATA #REQUIRED >	
-				<!ELEMENT memail (#PCDATA) >			
-		<!ELEMENT teams (team+) >		
-			<!ELEMENT team (leader, developers+, tester?, documenters*) >
-				<!ELEMENT leader (#PCDATA) >
-				<!ELEMENT developers (#PCDATA) >
-				<!ELEMENT tester (#PCDATA) >	
-				<!ELEMENT documenters (#PCDATA) >
-		<!ELEMENT clients (client?) >
-			<!ELEMENT client (clientname, address, clientemail, clientphone) >
-			<!ATTLIST client clientid ID #REQUIRED>
-				<!ELEMENT clientname (#PCDATA) >
-				<!ELEMENT address (street?, city, country, postcode?) >
-					<!ELEMENT street (#PCDATA) >
-					<!ELEMENT city (#PCDATA) >
-					<!ELEMENT country (#PCDATA) >	
-					<!ELEMENT postcode (#PCDATA) >				
-				<!ELEMENT clientemail (#PCDATA) >	
-				<!ELEMENT clientphone (#PCDATA) >
-		<!ELEMENT projectdate EMPTY >
-		<!ATTLIST projectdate start CDATA #REQUIRED >
-		<!ATTLIST projectdate end CDATA #REQUIRED >
-		<!ELEMENT projectcomments (#PCDATA) >
+					CDATA) >
+			&lt;!ELEMENT projects (company, project+) &gt;
+	&lt;!ELEMENT company (companyname, companyaddress, logo, websiteaddress?, email, phone+) &gt;
+		&lt;!ELEMENT companyname (#PCDATA) &gt;
+		&lt;!ELEMENT companyaddress (#PCDATA) &gt;
+		&lt;!ELEMENT logo EMPTY &gt;
+		&lt;!ATTLIST logo src CDATA #REQUIRED &gt;
+		&lt;!ELEMENT websiteaddress (#PCDATA) &gt;
+		&lt;!ELEMENT email (#PCDATA) &gt;		
+		&lt;!ELEMENT phone (#PCDATA) &gt;		
+	&lt;!ELEMENT project (title, managers, teams, clients?, projectdate, projectcomments) &gt;
+	    &lt;!ATTLIST project projid ID #REQUIRED &gt;
+		&lt;!ELEMENT title (#PCDATA) &gt;
+		&lt;!ELEMENT managers (manager+) &gt;
+			&lt;!ELEMENT manager (name, mphone, memail*) &gt;
+				&lt;!ELEMENT name (firstname, middlename?, lastname) &gt;
+					&lt;!ELEMENT firstname (#PCDATA) &gt;
+					&lt;!ELEMENT middlename (#PCDATA) &gt;
+					&lt;!ELEMENT lastname (#PCDATA) &gt;
+				&lt;!ELEMENT mphone EMPTY &gt;	
+				&lt;!ATTLIST mphone office CDATA #REQUIRED &gt;
+				&lt;!ATTLIST mphone home CDATA #REQUIRED &gt;	
+				&lt;!ELEMENT memail (#PCDATA) &gt;			
+		&lt;!ELEMENT teams (team+) &gt;		
+			&lt;!ELEMENT team (leader, developers+, tester?, documenters*) &gt;
+				&lt;!ELEMENT leader (#PCDATA) &gt;
+				&lt;!ELEMENT developers (#PCDATA) &gt;
+				&lt;!ELEMENT tester (#PCDATA) &gt;	
+				&lt;!ELEMENT documenters (#PCDATA) &gt;
+		&lt;!ELEMENT clients (client?) &gt;
+			&lt;!ELEMENT client (clientname, address, clientemail, clientphone) &gt;
+			&lt;!ATTLIST client clientid ID #REQUIRED&gt;
+				&lt;!ELEMENT clientname (#PCDATA) &gt;
+				&lt;!ELEMENT address (street?, city, country, postcode?) &gt;
+					&lt;!ELEMENT street (#PCDATA) &gt;
+					&lt;!ELEMENT city (#PCDATA) &gt;
+					&lt;!ELEMENT country (#PCDATA) &gt;	
+					&lt;!ELEMENT postcode (#PCDATA) &gt;				
+				&lt;!ELEMENT clientemail (#PCDATA) &gt;	
+				&lt;!ELEMENT clientphone (#PCDATA) &gt;
+		&lt;!ELEMENT projectdate EMPTY &gt;
+		&lt;!ATTLIST projectdate start CDATA #REQUIRED &gt;
+		&lt;!ATTLIST projectdate end CDATA #REQUIRED &gt;
+		&lt;!ELEMENT projectcomments (#PCDATA) &gt;
 					</code>
 				</p>
 				<br/>
